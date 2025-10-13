@@ -20,10 +20,11 @@ cp -r dist/* ../temp  # copy contents of dist to temp
 # Step 5: Switch to main branch
 git switch main
 
-# Step 6: Remove old myportfolio folder if needed
-rm -rf myportfolio    # WARNING: deletes old folder
+# Step 6: Remove old files in main (but keep .git and scripts)
+echo "🧹 Cleaning old files..."
+find . -maxdepth 1 ! -name ".git" ! -name "temp" -exec rm -rf {} +
 
-# Step 7: Copy temp folder as new myportfolio
-cp -r ../temp myportfolio
+# Step 7: Copy new build files to root
+cp -r temp/* .
 
 echo "✅ Build copied to main branch!"
