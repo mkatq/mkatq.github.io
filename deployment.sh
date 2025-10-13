@@ -22,12 +22,16 @@ git switch main
 
 # Step 6: Remove old files in main (but keep .git and scripts)
 echo "🧹 Cleaning old files..."
-find . -maxdepth 1 ! -name ".git" ! -name "temp" -exec rm -rf {} +
+find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "temp" -exec rm -rf {} +
+
 
 # Step 7: Copy new build files to root
-cp -r temp/* .
+cp -r ../temp/* .
 rm -rf temp        # remove old temp if exists
 
+# Step 8: Push changes
+git add .
+git commit -m "Update build from dev"
 git push
 
 echo "✅ Build copied to main branch!"
