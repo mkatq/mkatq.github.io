@@ -26,5 +26,8 @@ find . -maxdepth 1 ! -name ".git" ! -name "temp" -exec rm -rf {} +
 
 # Step 7: Copy new build files to root
 cp -r temp/* .
+rm -rf temp        # remove old temp if exists
+
+git push
 
 echo "✅ Build copied to main branch!"
