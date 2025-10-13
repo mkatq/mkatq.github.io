@@ -17,7 +17,6 @@ const Skills = () => {
     { skill: "Express JS", logo: "https://cdn.simpleicons.org/express" },
     { skill: "Next.js", logo: "https://cdn.simpleicons.org/nextdotjs" },
     { skill: "Laravel", logo: "https://cdn.simpleicons.org/laravel" },
-    { skill: "PHP", logo: "https://cdn.simpleicons.org/php" },
 
     // Mobile App Development
     { skill: "Flutter", logo: "https://cdn.simpleicons.org/flutter" },
