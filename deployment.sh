@@ -27,7 +27,7 @@ find . -mindepth 1 -maxdepth 1 ! -name ".git" ! -name "temp" -exec rm -rf {} +
 
 # Step 7: Copy new build files to root
 cp -r ../temp/* .
-rm -rf temp        # remove old temp if exists
+rm -rf ../temp        # remove old temp if exists
 
 # Step 8: Push changes
 git add .
