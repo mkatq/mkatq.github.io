@@ -16,7 +16,7 @@ echo "✅ Project built successfully!"
 rm -rf ../temp        # remove old temp if exists
 mkdir -p ../temp      # create temp folder
 cp -r dist/* ../temp  # copy contents of dist to temp
-
+cd ../
 # Step 5: Switch to main branch
 git switch main
 
