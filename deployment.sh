@@ -34,9 +34,9 @@ find . -mindepth 1 -maxdepth 1 \
 cp -r temp/* .
 rm -rf temp        # remove old temp if exists
 
-# # Step 8: Push changes
-# git add .
-# git commit -m "Update build from dev"
-# git push
+# Step 8: Push changes
+git add .
+git commit -m "Update build from dev"
+git push
 
-# echo "✅ Build copied to main branch!"
+echo "✅ Build copied to main branch!"
