@@ -37,6 +37,64 @@ const Projects = () => {
       appicon:
         "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P1/coffeeicon.png",
     },
+
+    {
+      classn: "project-image",
+      title: "Tamirah",
+      description:
+        "Designed a mobile app for real-time classification of dates fruit images. Achieved 97% accuracy using a Convolutional Neural Network (CNN) model.",
+      images: [
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/1.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/2.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/3.png",
+      ],
+      tools: [
+        "https://cdn.simpleicons.org/python",
+        "https://cdn.simpleicons.org/tensorflow",
+        "https://cdn.simpleicons.org/flutter",
+        "https://cdn.simpleicons.org/figma",
+      ],
+      logos: [
+        "https://cdn.simpleicons.org/flutter",
+        "https://cdn.simpleicons.org/dart",
+        "https://cdn.simpleicons.org/python",
+        "https://cdn.simpleicons.org/tensorflow",
+        "https://cdn.simpleicons.org/googlecolab",
+      ],
+      liveLink: "https://example.com/dates-fruit-classification",
+      gitHubLink: "https://github.com/mkatq/Dates_Fruit_Classification_App",
+      appicon:
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749506517/assets/P4/datesappicon.png",
+    },
+    {
+      classn: "project-image1",
+      title: "Receptionist Task Management System",
+      description:
+        "Built a Laravel-based system to streamline receptionist workflows, including appointment scheduling, visitor tracking, and task management.",
+      images: [
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600411/assets/P3/view-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/add-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600411/assets/P3/update-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/delete-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/reports-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600407/assets/P3/admin-front.png",
+      ],
+      tools: ["Laravel", "JavaScript", "HTML/CSS", "MySQL"],
+      logos: [
+        "https://cdn.simpleicons.org/laravel",
+        "https://cdn.simpleicons.org/html5",
+        "https://cdn.simpleicons.org/css",
+        "https://cdn.simpleicons.org/javascript",
+        "https://cdn.simpleicons.org/php",
+        "https://cdn.simpleicons.org/bootstrap",
+        "https://cdn.simpleicons.org/mysql",
+      ],
+      liveLink: "https://example.com/receptionist-optimization",
+      gitHubLink: "https://github.com/user/receptionist-optimization",
+      appicon:
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749511106/assets/P3/download_2.png",
+    },
+    
     {
       classn: "project-image1",
       title: "DevOps Pipeline for Microservices-based App",
@@ -107,62 +165,7 @@ const Projects = () => {
       appicon:
         "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749508808/assets/P2/AIappicon.png",
     },
-    {
-      classn: "project-image1",
-      title: "Receptionist Task Management System",
-      description:
-        "Built a Laravel-based system to streamline receptionist workflows, including appointment scheduling, visitor tracking, and task management.",
-      images: [
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600411/assets/P3/view-front.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/add-front.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600411/assets/P3/update-front.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/delete-front.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600408/assets/P3/reports-front.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749600407/assets/P3/admin-front.png",
-      ],
-      tools: ["Laravel", "JavaScript", "HTML/CSS", "MySQL"],
-      logos: [
-        "https://cdn.simpleicons.org/laravel",
-        "https://cdn.simpleicons.org/html5",
-        "https://cdn.simpleicons.org/css",
-        "https://cdn.simpleicons.org/javascript",
-        "https://cdn.simpleicons.org/php",
-        "https://cdn.simpleicons.org/bootstrap",
-        "https://cdn.simpleicons.org/mysql",
-      ],
-      liveLink: "https://example.com/receptionist-optimization",
-      gitHubLink: "https://github.com/user/receptionist-optimization",
-      appicon:
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749511106/assets/P3/download_2.png",
-    },
-    {
-      classn: "project-image",
-      title: "Tamirah",
-      description:
-        "Designed a mobile app for real-time classification of dates fruit images. Achieved 97% accuracy using a Convolutional Neural Network (CNN) model.",
-      images: [
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/1.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/2.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P4/3.png",
-      ],
-      tools: [
-        "https://cdn.simpleicons.org/python",
-        "https://cdn.simpleicons.org/tensorflow",
-        "https://cdn.simpleicons.org/flutter",
-        "https://cdn.simpleicons.org/figma",
-      ],
-      logos: [
-        "https://cdn.simpleicons.org/flutter",
-        "https://cdn.simpleicons.org/dart",
-        "https://cdn.simpleicons.org/python",
-        "https://cdn.simpleicons.org/tensorflow",
-        "https://cdn.simpleicons.org/googlecolab",
-      ],
-      liveLink: "https://example.com/dates-fruit-classification",
-      gitHubLink: "https://github.com/mkatq/Dates_Fruit_Classification_App",
-      appicon:
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749506517/assets/P4/datesappicon.png",
-    },
+    
   ];
 
   return (
