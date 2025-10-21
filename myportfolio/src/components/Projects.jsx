@@ -97,7 +97,7 @@ const Projects = () => {
     
     {
       classn: "project-image1",
-      title: "DevOps Pipeline for Microservices-based App",
+      title: "DevOps Pipeline for a Cloud-Native Microservices App",
       description:
         "Designed and deployed a scalable microservices application on Kubernetes using Docker, while automating infrastructure provisioning and CI/CD pipelines with Terraform, Ansible, and Azure Pipelines. Integrated tools like SonarQube for code quality analysis and Prometheus with Grafana for real-time monitoring and observability.",
       images: [
