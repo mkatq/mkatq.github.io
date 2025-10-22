@@ -94,21 +94,22 @@ const Projects = () => {
       appicon:
         "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749511106/assets/P3/download_2.png",
     },
-    
+
     {
       classn: "project-image1",
       title: "DevOps Pipeline for a Cloud-Native Microservices App",
       description:
         "Designed and deployed a scalable microservices application on Kubernetes using Docker, while automating infrastructure provisioning and CI/CD pipelines with Terraform, Ansible, and Azure Pipelines. Integrated tools like SonarQube for code quality analysis and Prometheus with Grafana for real-time monitoring and observability.",
       images: [
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/2.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/3.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/1.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/8.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/4.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/6.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/5.png",
-        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1752425071/assets/P6/7.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761087557/assets/P6/1.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761091133/assets/P6/Screenshot_2025-10-22_025107-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761091136/assets/P6/2-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761091136/assets/P6/Screenshot_2025-10-22_025416-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761091134/assets/P6/3-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761089500/assets/P6/Screenshot_2025-07-06_215034-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761089462/assets/P6/Screenshot_2025-07-06_214615-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761091845/assets/P6/Screenshot_2025-10-22_030756-front.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1761089459/assets/P6/Screenshot_2025-07-06_214942-front.png",
       ],
       tools: [
         "Docker",
@@ -165,7 +166,6 @@ const Projects = () => {
       appicon:
         "https://res.cloudinary.com/drmiuvc9x/image/upload/v1749508808/assets/P2/AIappicon.png",
     },
-    
   ];
 
   return (
