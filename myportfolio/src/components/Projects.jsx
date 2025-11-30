@@ -37,7 +37,41 @@ const Projects = () => {
       appicon:
         "https://res.cloudinary.com/drmiuvc9x/image/upload/assets/P1/coffeeicon.png",
     },
+{
+      classn: "project-image",
+      title: "Nextpartner",
+      description:
+        "Built a platform to help users explore and find affordable shared apartments, reducing housing costs and search time",
+      images: [
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532966/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_5_-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532967/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_4_-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532967/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_2_-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532967/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_2_-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532966/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_3_-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532966/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM-portrait.png",
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764532966/assets/P7/WhatsApp_Image_2025-11-30_at_10.53.17_PM_6_-portrait.png",
+      ],
+      tools: ["Flutter", "Firebase", "Google Maps", "RESTful APIs"],
+      logos: [
 
+    "https://cdn.simpleicons.org/flutter",
+    "https://cdn.simpleicons.org/dart",
+    "https://cdn.simpleicons.org/node.js",
+    "https://cdn.simpleicons.org/mongodb",
+    "https://cdn.simpleicons.org/docker",
+    "https://cdn.simpleicons.org/kubernetes",
+    "https://cdn.simpleicons.org/argo",
+    "https://cdn.simpleicons.org/githubactions",
+
+
+
+      ],
+      liveLink: "https://example.com/coffee-order-app",
+      gitHubLink: "https://github.com/mkatq/coffee_order_application",
+
+      appicon:
+        "https://res.cloudinary.com/drmiuvc9x/image/upload/v1764534061/assets/P7/Icon-App-1024x1024_1x-modified.png",
+    },
     {
       classn: "project-image",
       title: "Tamirah",
