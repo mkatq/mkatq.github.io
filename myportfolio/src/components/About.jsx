@@ -1,28 +1,56 @@
-import "../App.css"; // Import the styling
+// src/components/About.jsx
+import React, { useEffect, useState } from "react";
+import { apiFetch } from "../config/api";
+import "../App.css";
 
-const About = () => (
-  <>
-    <section id="about" style={{ paddingTop: "100px" }}>
-      
-      <div className="about1">
-        <h1>
-            Hello👋, I'm Meshari Altawfiq, a <span className="highlight">Software Engineer</span>🧑‍💻. Specializing
-            in mobile and web development. I'm passionate about creating
-            innovative solutions. <h5>Let's connect and build something great!</h5> 
-        </h1>
+const About = () => {
+  const [about, setAbout] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchAbout() {
+      try {
+        const data = await apiFetch("/about");
+        setAbout(data);
+      } catch (err) {
+        setError(err.message || "Failed to load About info");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchAbout();
+  }, []);
+
+  if (loading) return <p>Loading About info...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!about) return <p>No About info found.</p>;
+
+  return (
+    <section id="about" style={{ paddingTop: "100px", textAlign: "center" }}>
+      <div className="about1" style={{ maxWidth: "700px", margin: "0 auto" }}>
+        <h1>{about.description}</h1>
+        {/* You can uncomment these if needed */}
+        {/* <p>Email: {about.email}</p>
+        <p>Phone: {about.phone}</p> */}
       </div>
 
-      <div style={{ display: "block", marginTop: "50px" }}>
-        {" "}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "20px",
+          marginTop: "30px",
+          flexWrap: "wrap",
+        }}
+      >
         <a
-          href="https://github.com/mkatq"
+          href={about.github}
           target="_blank"
           rel="noopener noreferrer"
           className="elevated-button"
-          style={{
-            backgroundColor: "#eeeeee",
-            color: "black",
-          }}
+          style={{ backgroundColor: "#eeeeee", color: "black" }}
         >
           GitHub
           <img
@@ -31,8 +59,9 @@ const About = () => (
             style={{ width: "20px", height: "20px", marginLeft: "8px" }}
           />
         </a>
+
         <a
-          href="https://www.linkedin.com/in/mkatq"
+          href={about.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="elevated-button"
@@ -51,6 +80,7 @@ const About = () => (
         </a>
       </div>
     </section>
-  </>
-);
+  );
+};
+
 export default About;

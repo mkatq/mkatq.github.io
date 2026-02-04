@@ -21,14 +21,14 @@ const EducationCard = ({
         </h3>
       </center>
 
-      <p> <strong>{degree}</strong></p>
+      <p> <strong>-  {degree}</strong></p>
 
       <p>
-        <strong> {date}</strong>
+        <strong>-  {date}</strong>
       </p>
       {gpa && (
         <p>
-          <strong>{gpa}</strong> 
+          <strong>-  {gpa}</strong> 
         </p>
       )}
 

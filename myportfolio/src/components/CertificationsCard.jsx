@@ -2,17 +2,17 @@
 import React from "react";
 import "../App.css";
 
-const CertificationsCard = ({ title, issuer, date, link, image }) => {
+const CertificationsCard = ({ title, issuer, date, images }) => {
   return (
     <div className="cert-card">
       <h3>{title}</h3>
       <p>
         <strong>{issuer}</strong> — {date}
       </p>
-      {link && image && (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+      {(
+        <a href={""} target="_blank" rel="noopener noreferrer">
           <img
-            src={image}
+            src={images}
             alt={`${title} certificate`}
             style={{
               width: "100%",

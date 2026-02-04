@@ -3,15 +3,13 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
 
 const ProjectCard = ({
-  classn,
+ classn = "project-image",
   title,
   description,
-  tools,
-  logos,
+  technologies,
+  icon,
   images,
-  liveLink,
-  gitHubLink,
-  appicon,
+  github,
 }) => {
   return (
     <div className="project-card">
@@ -26,7 +24,7 @@ const ProjectCard = ({
           }}
         >
           <img
-            src={appicon}
+            src={icon}
             style={{
               width: "40px",
               height: "40px",
@@ -34,7 +32,7 @@ const ProjectCard = ({
             }}
           />
           {title}
-          <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+          <a href={github} target="_blank" rel="noopener noreferrer">
             <img
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
               alt="GitHub"
@@ -53,8 +51,8 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="project-logos">
-          {logos.map((logo, index) => (
+        <div className="project-icon">
+          {technologies.map((logo, index) => (
             <img key={index} src={logo} alt="" className="project-logo" />
           ))}
         </div>
